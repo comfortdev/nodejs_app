@@ -14,11 +14,21 @@
     "verbose": true
   },
   "scripts": {
+    "lint": "./node_modules/.bin/eslint .",
+    "lint-fix": "./node_modules/.bin/eslint --fix",
     "test": "./node_modules/.bin/jest -i"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^8.19.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.3",
+    "eslint-plugin-promise": "^6.0.0",
     "jest": "^28.1.1"
+  },
+  "dependencies": {
+    "eslint-plugin-jest": "^26.5.3"
   }
 }
